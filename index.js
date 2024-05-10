@@ -1,6 +1,3 @@
-function flattenArray(arr) {
-  return arr.reduce(
-    (acc, curr) => acc.concat(Array.isArray(curr) ? flattenArray(curr) : curr),
-    [],
-  );
+function averageArray(arr) {
+  return arr.reduce((acc, curr) => acc + curr, 0) / arr.length;
 }
